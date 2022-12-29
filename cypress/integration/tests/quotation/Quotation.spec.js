@@ -22,16 +22,11 @@ And("fill required data", () => {
     quotationPage.enterRequiredData("abc","123","11","11")
 });
 
-And("save quotation", () => {
-    quotationPage.saveQuotation()
-    
-    
-        
+Then("save and validate quotation", () => {
+    quotationPage.saveQuotationAndRetrieveQuotation()      
 })
 
-Then("go to retrieve quotation page", () => {
-    quotationPage.retrieveQuotation()
-})
+
 
 
 
