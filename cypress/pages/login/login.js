@@ -14,7 +14,6 @@ class loginPage {
 
   static enterEmailAndPassword(emailtext,passwordtext) {
     cy.get(email).type(emailtext);
-    cy.wait(3000)
     cy.get(password).type(passwordtext);
 
   }
@@ -29,7 +28,6 @@ class loginPage {
 
   static successfullvalidateLogin() {
     cy.contains('Broker Insurance WebPage').should('be.visible')
-    cy.wait(1000) 
   }
 
   static unsuccessfullLoginValidation() {
